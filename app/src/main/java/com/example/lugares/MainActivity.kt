@@ -23,6 +23,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         FirebaseApp.initializeApp(this)
         auth = Firebase.auth
+        binding.btRegister.setOnClickListener{
+            registro()
+        }
+        binding.btLogin.setOnClickListener {
+            login()
+        }
     }
 
     //fun: function
